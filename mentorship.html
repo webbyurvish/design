@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentorships</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .eWrBEk {
+        position: fixed;
+        left: 0px;
+        background-color: rgb(255, 255, 255);
+        overflow-x: hidden;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px 0px;
+        height: 100%;
+        padding: 5px;
+      }
+      .dhAbpN {
+        height: auto;
+        width: 100%;
+        margin-bottom: 70px;
+        max-width: 85px;
+      }
+      .layWKW {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        margin-bottom: 38px;
+      }
+      .layWKW > i {
+        font-size: 40px;
+        color: #8080809c;
+      }
+      .layWKW.active > i {
+        color: #69d5b1;
+      }
+      .bfSpmb {
+        font-size: 15px;
+        color: rgb(74, 74, 74);
+      }
+      .feLfRC {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .account-right-side {
+        padding-left: 120px;
+        width: 100%;
+        background: radial-gradient(
+          circle,
+          rgb(165, 252, 219) 0%,
+          rgb(18, 195, 149) 100%
+        );
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        height: 268px;
+      }
+      .accont-home h2 {
+        font-size: 28px;
+        font-weight: 700;
+        color: #fff;
+        padding: 40px;
+        padding-left: 100px;
+      }
+      .profile-details {
+        text-align: center;
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px 0px;
+        padding: 15px;
+        height: 100%;
+      }
+      .profile-details img {
+        width: 100%;
+        max-width: 100px;
+      }
+      .profile-details p {
+        color: rgb(74, 74, 74);
+        line-height: 17px;
+        margin: 1% 0px 0px;
+      }
+
+      .profile-details h2 {
+        color: rgb(74, 74, 74);
+        font-weight: bold;
+        line-height: 26px;
+        margin: 0px;
+      }
+      .share-details a i {
+        color: rgb(23 154 111);
+      }
+
+      .share-details {
+        position: absolute;
+        right: 40px;
+        top: 30px;
+      }
+      .detail-name a:first-child {
+        color: rgb(74, 74, 74);
+        line-height: 1.21429rem;
+        font-weight: bold;
+        margin: 0px;
+      }
+      .detail-name a:nth-child(2) {
+        font-size: 13px;
+        text-decoration: underline;
+        color: #000;
+      }
+      .detail-name {
+        padding: 20px 0;
+      }
+      .profiles-details-cover ul li {
+        text-align: left;
+        display: flex;
+        align-items: flex-start;
+        align-items: flex-start;
+        margin: 10px 0;
+      }
+      .profiles-details-cover ul li svg {
+        width: 100%;
+        max-width: 26px;
+        margin-right: 15px;
+      }
+      .accound-cover {
+        margin-top: -60px;
+      }
+    </style>
+    <style>
+      .mentorship-profile-detail a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .poifile-details {
+        display: flex;
+        align-items: center;
+      }
+      .poifile-details-cover {
+        text-align: justify;
+      }
+      .poifile-details img {
+        width: 100%;
+        max-width: 80px;
+      }
+      .share-details-2 p {
+        text-align: justify;
+        font-size: 15px;
+        font-weight: 500;
+      }
+      .mentorship-profile-detail {
+        margin-top: 20px;
+      }
+      .mentorship-profile-detail a .poifile-details-cover p span {
+        font-size: 10px;
+        padding: 3px 0px;
+        line-height: 1;
+        width: 66px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 3px;
+        background: #3ad2a8;
+        color: #fff;
+      }
+      .mentorship-profile-detail a .poifile-details-cover span {
+        color: #000;
+      }
+      .details-link a {
+        font-size: 15px;
+        margin-left: 20px;
+        color: #39d2a7;
+      }
+
+      .details-link {
+        text-align: end;
+        margin-top: 30px;
+      }
+      .details-message-cover p {
+        font-size: 15px;
+        margin-bottom: 7px;
+      }
+      .details-message-cover span {
+        text-align: justify;
+        font-size: 15px;
+        width: 100%;
+        display: inline-block;
+      }
+      .details-message-cover {
+        margin: 27px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- managment-account -->
+    <div class="managment-account">
+      <div class="container-fluid">
+        <div class="account-side-bar">
+          <nav class="sc-iqseJM eWrBEk">
+            <img src="img/navlogo.jpg" alt="Logo" class="sc-egiyK dhAbpN" /><a
+              href="account.html"
+              class="sc-crHmcD layWKW"
+            >
+              <i class="fa-solid fa-house-user"></i>
+              <div class="sc-bqiRlB bfSpmb">Home</div></a
+            ><a href="javascript:void(0)" class="sc-crHmcD layWKW active">
+              <i class="fa-solid fa-file-lines"></i>
+              <div class="sc-bqiRlB bfSpmb">Mentorships</div></a
+            ><a href="javascript:void(0)" class="sc-crHmcD layWKW">
+              <i class="fa-solid fa-people-arrows"></i>
+              <div class="sc-bqiRlB bfSpmb">Mentors</div></a
+            ><a
+              href="javascript:void(0)"
+              class="sc-crHmcD sc-ksdxgE layWKW feLfRC krxgFs"
+            >
+              <i class="fa-solid fa-right-from-bracket"></i>
+              <div class="sc-bqiRlB bfSpmb">Logout</div></a
+            >
+          </nav>
+          <div class="account-right-side">
+            <div class="accont-home">
+              <h2>Home</h2>
+            </div>
+          </div>
+          <div class="account-profile">
+            <div class="accound-cover">
+              <div class="row justify-content-center">
+                <div class="col-lg-4">
+                  <div class="profile-details">
+                    <div class="share-details-2">
+                      <p>Mentorship Requests</p>
+                      <div class="mentorship-profile-detail">
+                        <a href="javascript:void(0)">
+                          <div class="poifile-details">
+                            <img src="img/navlogo.jpg" alt="" />
+                            <div class="poifile-details-cover">
+                              <p>
+                                Urvish Vaghas....
+                                <span class="green-color">Approved</span>
+                              </p>
+                              <span>Full stack web....</span>
+                            </div>
+                          </div>
+                          <div class="mentorship-day">
+                            <p>4 Days Ago</p>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="details-message">
+                        <div class="details-message-cover">
+                          <p>Message</p>
+                          <span
+                            >Please help me in this for better understanging in
+                            my internship</span
+                          >
+                        </div>
+                        <div class="details-message-cover">
+                          <p>Message</p>
+                          <span
+                            >Please help me in this for better understanging in
+                            my internship</span
+                          >
+                        </div>
+                        <div class="details-message-cover">
+                          <p>Message</p>
+                          <span
+                            >Please help me in this for better understanging in
+                            my internship</span
+                          >
+                        </div>
+                        <div class="details-link">
+                          <a href="javascript:void(0)">Video Call</a>
+                          <a href="javascript:void(0)">Send a message </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="profile-details details-cover">
+                    <div class="share-details-2">
+                      <p>My Mentorship Requests</p>
+                      <div class="mentorship-profile-detail">
+                        <a href="javascript:void(0)">
+                          <div class="poifile-details">
+                            <img src="img/navlogo.jpg" alt="" />
+                            <div class="poifile-details-cover">
+                              <p>
+                                Urvish Vaghas....
+                                <span class="green-color">Approved</span>
+                              </p>
+                              <span>Full stack web....</span>
+                            </div>
+                          </div>
+                          <div class="mentorship-day">
+                            <p>4 Days Ago</p>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="details-message d-none">
+                        <div class="details-message-cover">
+                          <p>Message</p>
+                          <span
+                            >Please help me in this for better understanging in
+                            my internship</span
+                          >
+                        </div>
+                        <div class="details-message-cover">
+                          <p>Message</p>
+                          <span
+                            >Please help me in this for better understanging in
+                            my internship</span
+                          >
+                        </div>
+                        <div class="details-message-cover">
+                          <p>Message</p>
+                          <span
+                            >Please help me in this for better understanging in
+                            my internship</span
+                          >
+                        </div>
+                        <div class="details-link">
+                          <a href="javascript:void(0)">Video Call</a>
+                          <a href="javascript:void(0)">Send a message </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="share-details-2">
+                      <div class="mentorship-profile-detail">
+                        <a href="javascript:void(0)">
+                          <div class="poifile-details">
+                            <img src="img/navlogo.jpg" alt="" />
+                            <div class="poifile-details-cover">
+                              <p>
+                                Urvish Vaghas....
+                                <span class="green-color">Approved</span>
+                              </p>
+                              <span>Full stack web....</span>
+                            </div>
+                          </div>
+                          <div class="mentorship-day">
+                            <p>4 Days Ago</p>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="details-message d-none">
+                        <div class="details-message-cover">
+                          <p>Message</p>
+                          <span
+                            >Please help me in this for better understanging in
+                            my internship</span
+                          >
+                        </div>
+                        <div class="details-message-cover">
+                          <p>Message</p>
+                          <span
+                            >Please help me in this for better understanging in
+                            my internship</span
+                          >
+                        </div>
+                        <div class="details-message-cover">
+                          <p>Message</p>
+                          <span
+                            >Please help me in this for better understanging in
+                            my internship</span
+                          >
+                        </div>
+                        <div class="details-link">
+                          <a href="javascript:void(0)">Video Call</a>
+                          <a href="javascript:void(0)">Send a message </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="share-details-2">
+                      <div class="mentorship-profile-detail">
+                        <a href="javascript:void(0)">
+                          <div class="poifile-details">
+                            <img src="img/navlogo.jpg" alt="" />
+                            <div class="poifile-details-cover">
+                              <p>
+                                Urvish Vaghas....
+                                <span class="green-color">Approved</span>
+                              </p>
+                              <span>Full stack web....</span>
+                            </div>
+                          </div>
+                          <div class="mentorship-day">
+                            <p>4 Days Ago</p>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="details-message d-none">
+                        <div class="details-message-cover">
+                          <p>Message</p>
+                          <span
+                            >Please help me in this for better understanging in
+                            my internship</span
+                          >
+                        </div>
+                        <div class="details-message-cover">
+                          <p>Message</p>
+                          <span
+                            >Please help me in this for better understanging in
+                            my internship</span
+                          >
+                        </div>
+                        <div class="details-message-cover">
+                          <p>Message</p>
+                          <span
+                            >Please help me in this for better understanging in
+                            my internship</span
+                          >
+                        </div>
+                        <div class="details-link">
+                          <a href="javascript:void(0)">Video Call</a>
+                          <a href="javascript:void(0)">Send a message </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /managment-account -->
+  </body>
+</html>
